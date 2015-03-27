@@ -1,0 +1,39 @@
+<section>
+	<h3 id="Om-Meg">Om meg</h3>
+
+	<div class="face-lockup">
+		
+		<div class="face-img"></div>
+
+			<div class="icon-pencil">{% include /icons/icon-pencil.html %}</div>
+			<div class="icon-mouse">{% include /icons/icon-mouse.html %}</div>
+			<div class="icon-browser">{% include /icons/icon-browser.html %}</div>
+			<div class="icon-video">{% include /icons/icon-video.html %}</div>
+
+		</div>
+	
+			<div class="blurb">
+				<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+
+	<div class="skill-lockup">
+		
+		  {% for skill in site.data.settings.skills %}
+
+      <div class="skill-unit">
+        <div class="skill-label">{{ skill.name }}</div>
+        <div class="skill-icons skill-{{ skill.value }}">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>    
+
+  {% endfor %}
+	</div>
+
+
+
+
+
+
+</section>
