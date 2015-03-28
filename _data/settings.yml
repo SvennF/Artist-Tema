@@ -8,7 +8,7 @@ url: "www.finnvold.no"
 
 menu:
 - {name: Om Meg, url: '#Om-Meg'}
-- {name: Jobb, url: '#Jobb'}
+- {name: Arbeid, url: '#Arbeid'}
 - {name: Klienter, url: '#Klienter'}
 - {name: Kontakt, url: '#Kontakt'}
 
