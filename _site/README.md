@@ -1,10 +1,11 @@
-DevTips-Starter-Kit
+SvennF Starter Kit
 ===================
 
 My Version of devtips starter kit
-#This will be used for testing
+#This project will be used for testing git and jekyll
 
-__will__ be updated after each episode is finished
+
+It __will__ be updated after each episode is finished
 
 
 

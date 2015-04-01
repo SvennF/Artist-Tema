@@ -1,10 +1,28 @@
 .alt-section
 	background: $bgColor
 
+.section-work
+	overflow-x: hidden
+
+.work-belt
+	width: 200%
+	position: relative
+	left: 0%
+	+transition
+
+
+.thumb-wrap, .work-wrap
+	width: 50%
+	float: left	
+
+
+
+
+
 .thumb-container
 	max-width: 960px
 	margin: 0px auto
-	padding-bottom: 100px
+
 	+clearfix
 
 	.thumb-unit
@@ -14,6 +32,7 @@
 		position: relative
 		padding-top: 20%
 		overflow: hidden
+		cursor: pointer
 
 		@media screen and (max-width: 760px)
 			width: 50%
@@ -48,6 +67,48 @@
 
 
 		&:hover .thumb-overlay
-			+position(absolute, 0% 0px null 0px)
+			top: 0
+
+.work-container
+	max-width: 600px
+	margin: 0px auto
+	position: relative
+
+	h4
+		color: $accent
+		font-weight: 300
+		font-size: 24px
+		line-height: 1.2
+
+	img
+		max-width: 100%
+		margin-bottom: 20px
+
+	.work-return	
+		+size(40px)
+		cursor: pointer
+		+position(absolute, -5px null null -60px)
+		
+
+
+
+		svg
+			+size(40px)
+		path
+			fill: black	
+	
+		&:hover	
+			opacity: .4
+
+@media (max-width: 740px)
+	.work-container
+
+		.work-return
+			left: 0px
+
+		h4
+			margin-left: 60px
+
+
 
 
