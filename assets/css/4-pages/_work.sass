@@ -8,7 +8,7 @@
 	width: 200%
 	position: relative
 	left: 0%
-	+transition
+	+transition(all 800ms)
 
 
 .thumb-wrap, .work-wrap
@@ -22,6 +22,7 @@
 .thumb-container
 	max-width: 960px
 	margin: 0px auto
+	padding-bottom: 50px
 
 	+clearfix
 
@@ -73,12 +74,14 @@
 	max-width: 600px
 	margin: 0px auto
 	position: relative
+	display: none
 
 	h4
 		color: $accent
 		font-weight: 300
 		font-size: 24px
 		line-height: 1.2
+		margin: 0px  0px 0px 20px
 
 	img
 		max-width: 100%
